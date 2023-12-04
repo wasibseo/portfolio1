@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/wasib portfolio/portfolio.css">
+    <script src="https://kit.fontawesome.com/ac87a53ae7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        
+    </div>
+
+  </div>
+  <nav class="nav">
+    <ul class="ul">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<div class="header-text">
+    <p>Web developer</p>
+    <h1>I Am <span> Wasib </span> <br> From Pakistan</h1>
+
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img class="imgabout" src="/wasib portfolio/ww.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>my name is wasib and i m front-end developer with good cummunication skills i assure you that i can create a website according to your needs</p>
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+           <!--    <p class="tab-links" onclick="opentab('Experience')" >Experience</p>
+                <p class="tab-links" onclick="opentab('Education')" >Education</p>--> 
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web developer</span><br>HTML CSS</li>
+                    <li><span>Web developent</span><br>BOOTstrap</li>
+                    <li><span>Back end development</span><br>Java Script</li>
+
+                </ul>
+            </div>
+         <!--   <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>2023-current</span><br>developer</li>
+                    <li><span>2023-august</span><br>developer at Webscare</li>
+       
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2010-2014</span><br>BBA</li>
+                    <li><span>2014-2016</span><br>MBA from superior university</li>
+                   
+
+                </ul>
+            </div>-->
+            
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!---Services-->
+<div id="services">
+    <div class="conatiner">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                 <h1>$130</h1>
+                 <h2>Basic</h2>
+                 <p>1 page of PSD,XD,Sketch,PNG design or idea to responsive html, CSS</p>
+                 <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h1>$220</h1>
+                    <h2>Standard</h2>
+                    <p>3 pages of front end web development  PSD, XD into HTML CSS.</p>
+                    <a href="#"></a>
+                   </div>
+                   <div>
+                    <i class="fab fa-app-store"></i>
+                    <h1>$495</h1>
+                    <h2>Premium</h2>
+                    <p>5 pages of front end web development  XD into HTML CSS.</p>
+                    <a href="#"></a>
+                   </div>
+
+        </div>
+
+
+    </div>
+</div>
+<!--portfoloio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img class="img" src="/wasib portfolio/we.png" alt="">
+              
+            </div>
+            <div class="work">
+                <img src="/wasib portfolio/Screenshot - 12_2_2023 , 3_31_01 PM.png" alt="">
+            </div>
+            <div class="work">
+                <img src="/wasib portfolio/Screenshot - 12_2_2023 , 3_31_25 PM.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i> wasibseo@gmail.com</p>
+                <p><i class="fa-brands fa-square-whatsapp"></i> +92349-427-2211</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-Twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/wasib-iqbal-33780528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6"placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablinks of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzktWsXSFh3CPu2VjHr87Oy9oKWhD-h5VebTAbibyH25_eex9mQ048B9paT-Ok63xja/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
